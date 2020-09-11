@@ -18,5 +18,8 @@ public class FulfillmentListener {
         System.out.println("I got a message");
         System.out.println(payload);
 
+        //throw new RuntimeException("run time exception occured");
+        // in case of this exception message will be re queued to queue again by jms until client reads the message
+
     }
 }
